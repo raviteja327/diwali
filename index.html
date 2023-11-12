@@ -115,6 +115,24 @@
             }
         }
 
+        p {
+            margin-bottom: 0;
+            z-index: 1;
+            color: #fff;
+            font-family: monospace;
+            animation: blink 1s ease infinite alternate;
+            text-align: center;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
         @media (max-width: 1366px) {
             .container .title {
                 font-size: 4rem;
@@ -143,6 +161,11 @@
                 display: none;
             }
         }
+        @media (max-width: 394px) {
+            p {
+                font-size: 15px;
+            }
+        }
         @media (max-width: 320px) {
             .container .title {
                 font-size: 2rem;
@@ -165,6 +188,7 @@
             <li><span></span></li>
             <li><span></span></li>
         </ul>
+        <p><b>Note: </b>Please unmute to hear crackers sound</p>
     </div>    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
